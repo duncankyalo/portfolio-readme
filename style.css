@@ -1,0 +1,64 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.about, .skills, .experience, .education, .contact {
+    padding: 50px 0;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.list-group-item {
+    background-color: #fff;
+    border: none;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: wobble 2s infinite;
+}
+
+@keyframes wobble {
+  0% { transform: translateX(0) rotate(0); }
+  15% { transform: translateX(-5px) rotate(-5deg); }
+  30% { transform: translateX(5px) rotate(5deg); }
+  45% { transform: translateX(-5px) rotate(-5deg); }
+  60% { transform: translateX(5px) rotate(5deg); }
+  75% { transform: translateX(-5px) rotate(-5deg); }
+  90% { transform: translateX(5px) rotate(5deg); }
+  100% { transform: translateX(0) rotate(0); }
+}
+
+.profile-pic {
+    /* Existing styles for your profile picture */
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    animation: matrixAnimation 10s linear infinite; /* Animation name, duration, easing, iterations */
+  }
+  
+  @keyframes matrixAnimation {
+    0% {
+      filter: blur(0px); /* Start with no blur */
+      transform: translate(0); /* No initial translation */
+    }
+    50% {
+      filter: blur(5px); /* Maximum blur in the middle */
+      transform: translate(5px, 5px); /*  Slight translation */
+    }
+    100% {
+      filter: blur(0px); /* Back to no blur */
+      transform: translate(0); /* Back to original position */
+    }
+  }
